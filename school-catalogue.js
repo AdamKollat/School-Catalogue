@@ -39,8 +39,7 @@ class School {
   class PrimarySchool extends School {
    
     constructor(name, numberOfStudents, pickupPolicy) {
-      super(name);
-      this._numberOfStudents = numberOfStudents;
+      super(name, numberOfStudents);
       this._pickupPolicy = pickupPolicy;
       this._level = "primary";
     }
@@ -53,8 +52,7 @@ class School {
   class HighSchool extends School {
   
     constructor(name, numberOfStudents, sportsTeams) {
-      super(name);
-      this._numberOfStudents = numberOfStudents;
+      super(name, numberOfStudents);
       this._sportsTeams = sportsTeams;
     }
   
